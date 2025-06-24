@@ -2,18 +2,45 @@
 @import url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 
-:root{
+:root {
     /* font */
     --my-font-pret: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --my-font-tena: 'Tenada';
     --my-font-na: "Nanum Pen Script", cursive;
-    /* color */
+    /* main color */
     --my-main-one: #096688;
-    
+    --my-main-two: #339CCC;
+    --my-main-three: #8ADECE;
+    --my-main-four: #C4E8F4;
+    /* background color */
+    --my-back-one: #F0FBFF;
+    --my-back-two: #F6F6F6;
+    /* text color */
+    --my-txt-main: #222222;
 }
 
-.bb{
-    font-family: var(--my-font-na);
-    font-weight: bold;
-    font-size: 48px;
+body {
+    font-family: var(--my-font-pret);
+    color: var(--my-txt-main);
+    line-height: 1.4;
+
+    h1 {
+        font-family: var(--my-font-tena);
+        font-size: 3.63rem;
+    }
+
+    h2{
+        font-size: 2.25rem;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-family: var(--my-font-na);
+        font-size: 3rem;
+    }
+
+    h4{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
 }

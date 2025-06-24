@@ -1,1 +1,114 @@
-/*# sourceMappingURL=style.css.map */
+@import url("../scss/commons.css");
+/* nav */
+nav {
+  height: 100px;
+}
+
+/* kv */
+.kv {
+  background-image: url("../images/kv-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 638px;
+}
+.kv .container .row .txtbox {
+  padding: 230px 0;
+}
+.kv .container .row .txtbox h3 {
+  color: #fff;
+}
+.kv .container .row .txtbox h1 {
+  margin-top: 30px;
+  color: #fff;
+}
+.kv .container .row .txtbox h1 .pt1 {
+  color: var(--my-main-three);
+}
+.kv .container .row .txtbox h1 .pt2 {
+  color: var(--my-main-four);
+}
+
+/* sec01 */
+.sec01 .container {
+  padding: 200px 0 100px 0;
+}
+.sec01 .container .row .toptxt h4 {
+  margin-top: 10px;
+}
+.sec01 .container .content {
+  margin-top: 50px;
+}
+.sec01 .container .content .swiper .con {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 20px;
+}
+.sec01 .container .content .swiper .con .shop {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #555;
+}
+.sec01 .container .content .swiper .con .name {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.sec01 .container .content .swiper .con .price {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #111;
+}
+.sec01 .container .content .swiper .con .price .won {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--my-txt-main);
+}
+.sec01 .container .content .swiper .con .made {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--my-main-two);
+  border: 1px solid var(--my-main-two);
+  padding: 2px 8px;
+  border-radius: 50px;
+}
+.sec01 .container .content .swiper .con:hover {
+  border: 2px solid var(--my-main-two);
+  transition: all 0.3s ease;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+.sec01 .container .content .swiper-button-next, .sec01 .container .content .swiper-button-prev {
+  color: var(--my-main-two);
+}
+
+/* sec02 */
+.sec02 {
+  background: var(--my-back-one);
+}
+.sec02 .container {
+  padding: 100px 0;
+}
+.sec02 .container .mt-5 {
+  margin-top: 50px !important;
+}
+.sec02 .container .mt-5 .content {
+  background: #fff;
+  border-radius: 20px;
+}
+.sec02 .container .mt-5 .content .table-content table thead {
+  background: var(--my-back-two);
+}
+.sec02 .container .mt-5 .content .table-content table thead tr {
+  border-radius: 20px;
+}
+.sec02 .container .mt-5 .content .table-content table thead tr td {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding-right: 88px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.sec02 .container .mt-5 .content .table-content table thead tr .start {
+  padding-left: 62px;
+}
+.sec02 .container .mt-5 .content .table-content table thead tr .end {
+  padding-right: 62px;
+}/*# sourceMappingURL=style.css.map */
