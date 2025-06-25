@@ -9,33 +9,48 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/scss/style.css">
 
-    <style>
-        .table-content{
-    height:100px;
-    overflow-y: scroll;
-}
-
-.table-content .thead{
-    position:sticky;
-    top: 0;
-    background-color: rosybrown;
-}
-
-.table-content tbody{
-    height: 50px;
-    overflow-y: scroll;
-}
-
-    </style>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+<body>
     <!-- header -->
-    <nav class="navbar">
+    <nav>
         <div class="container">
-            <a href="#">
-                <img src="assets/images/icons/logo.png" alt="logo">
-            </a>
+            <div class="d-flex">
+                <a href="#" class="logo">
+                    <img src="assets/images/icons/logo.png" alt="logo">
+                </a>
+                <div class="sub-menu-bg"></div>
+                <ul class="main-menu d-flex">
+                    <li><a href="#none">노량진시장</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">연혁</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">시장안내</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">시장현황</a></li>
+                            <li><a href="#">영업시간</a></li>
+                            <li><a href="#">위치/주차안내</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">시장정보</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">이달의 수산물</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">시장소식</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">공지사항</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">고객센터</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">고객의 소리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -45,8 +60,8 @@
             <div class="row">
                 <div class="txtbox text-center">
                     <h3>바다를 머금은 곳</h3>
-                    <h1><span class="pt1">노량진수산시장</span>은
-                        살아 숨쉬는 <span class="pt2">바다</span>입니다. </h1>
+                    <h2><span class="pt1">노량진수산시장</span>은
+                        살아 숨쉬는 <span class="pt2">바다</span>입니다. </h2>
                 </div>
             </div>
         </div>
@@ -57,8 +72,8 @@
         <div class="container container-lg">
             <div class="row text-center">
                 <div class="col-12 toptxt">
-                    <h2>이달의 제철 해산물</h2>
-                    <h4>바다에서 온 계절의 별미</h4>
+                    <h4>이달의 제철 해산물</h4>
+                    <p class="main-subt-m">바다에서 온 계절의 별미</p>
                 </div>
             </div>
             <div class="row content">
@@ -153,28 +168,173 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h2>오늘의 수산물 시세</h2>
+                    <h4>오늘의 수산물 시세</h4>
                 </div>
             </div>
-            <div class="row mt-5">
+            <div class="row pt-5">
                 <div class="col-md-12">
                     <div class="content">
                         <div class="table-content">
-                            <table class="text-center">
-                                <thead>
-                                    <tr>
-                                        <td class="start">품목</td>
-                                        <td>가격(원단위)</td>
-                                        <td>가격변동</td>
-                                        <td>품목</td>
-                                        <td>가격(원단위)</td>
-                                        <td class="end">가격변동</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-
-                                </tbody>
-                            </table>
+                            <div class="tablebox">
+                                <table class="text-center">
+                                    <thead>
+                                        <tr class="body-txt20-m">
+                                            <td class="start">품목</td>
+                                            <td>가격(원단위)</td>
+                                            <td>가격변동</td>
+                                            <td>품목</td>
+                                            <td>가격(원단위)</td>
+                                            <td class="end">가격변동</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="body-txt6-m">
+                                        <tr>
+                                            <td>(활)가오리</td>
+                                            <td>12,500</td>
+                                            <td class="line red">▲ 12,500</td>
+                                            <td>(활)도다리</td>
+                                            <td>10,500</td>
+                                            <td class="red">▲ 4,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(활)넙치</td>
+                                            <td>14,500</td>
+                                            <td class="line blue">▼ 2,500</td>
+                                            <td>(활)찰넙치</td>
+                                            <td>6,000</td>
+                                            <td class="blue">▼ 4,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(활)놀래미</td>
+                                            <td>15,500</td>
+                                            <td class="line blue">▼ 2,500</td>
+                                            <td>(활)농어</td>
+                                            <td>13,300</td>
+                                            <td class="red">▲ 550</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(활)자바리</td>
+                                            <td>22,500</td>
+                                            <td class="line red">▲ 3,500</td>
+                                            <td>(활)능성어</td>
+                                            <td>23,500</td>
+                                            <td class="red">▲ 500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(활)붉바리</td>
+                                            <td>36,500</td>
+                                            <td class="line blue">▼ 18,500</td>
+                                            <td>(활)참돔</td>
+                                            <td>13,750</td>
+                                            <td>- 0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(활)감성돔</td>
+                                            <td>13,750</td>
+                                            <td class="line blue">▼ 1,500</td>
+                                            <td>(활)줄돔</td>
+                                            <td>45,000</td>
+                                            <td class="blue">▼ 27,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(활)가오리</td>
+                                            <td>12,500</td>
+                                            <td class="line red">▲ 12,500</td>
+                                            <td>(활)도다리</td>
+                                            <td>10,500</td>
+                                            <td class="red">▲ 4,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(활)넙치</td>
+                                            <td>14,500</td>
+                                            <td class="line blue">▼ 2,500</td>
+                                            <td>(활)찰넙치</td>
+                                            <td>6,000</td>
+                                            <td class="blue">▼ 4,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(활)놀래미</td>
+                                            <td>15,500</td>
+                                            <td class="line blue">▼ 2,500</td>
+                                            <td>(활)농어</td>
+                                            <td>13,300</td>
+                                            <td class="red">▲ 550</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(활)자바리</td>
+                                            <td>22,500</td>
+                                            <td class="line red">▲ 3,500</td>
+                                            <td>(활)능성어</td>
+                                            <td>23,500</td>
+                                            <td class="red">▲ 500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(활)붉바리</td>
+                                            <td>36,500</td>
+                                            <td class="line blue">▼ 18,500</td>
+                                            <td>(활)참돔</td>
+                                            <td>13,750</td>
+                                            <td>- 0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(활)감성돔</td>
+                                            <td>13,750</td>
+                                            <td class="line blue">▼ 1,500</td>
+                                            <td>(활)줄돔</td>
+                                            <td>45,000</td>
+                                            <td class="blue">▼ 27,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(활)가오리</td>
+                                            <td>12,500</td>
+                                            <td class="line red">▲ 12,500</td>
+                                            <td>(활)도다리</td>
+                                            <td>10,500</td>
+                                            <td class="red">▲ 4,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(활)넙치</td>
+                                            <td>14,500</td>
+                                            <td class="line blue">▼ 2,500</td>
+                                            <td>(활)찰넙치</td>
+                                            <td>6,000</td>
+                                            <td class="blue">▼ 4,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(활)놀래미</td>
+                                            <td>15,500</td>
+                                            <td class="line blue">▼ 2,500</td>
+                                            <td>(활)농어</td>
+                                            <td>13,300</td>
+                                            <td class="red">▲ 550</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(활)자바리</td>
+                                            <td>22,500</td>
+                                            <td class="line red">▲ 3,500</td>
+                                            <td>(활)능성어</td>
+                                            <td>23,500</td>
+                                            <td class="red">▲ 500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(활)붉바리</td>
+                                            <td>36,500</td>
+                                            <td class="line blue">▼ 18,500</td>
+                                            <td>(활)참돔</td>
+                                            <td>13,750</td>
+                                            <td>- 0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(활)감성돔</td>
+                                            <td>13,750</td>
+                                            <td class="line blue">▼ 1,500</td>
+                                            <td>(활)줄돔</td>
+                                            <td>45,000</td>
+                                            <td class="blue">▼ 27,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -182,73 +342,106 @@
         </div>
     </section>
 
-
-
-    <section>
+    <!-- sec03 -->
+    <section class="sec03">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="table-content">
-                                            <table>
-                        <thead class="thead">
-                            <tr>
-                            <td>제목</td>
-                            <td>수산물</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>대왕</td>
-                                <td>20000</td>
-                            </tr>
-                            <tr>
-                                <td>1111</td>
-                                <td>1112</td>
-                            </tr>
-                            <tr>
-                                <td>1111</td>
-                                <td>1112</td>
-                            </tr>
-                            <tr>
-                                <td>1111</td>
-                                <td>1112</td>
-                            </tr>
-                            <tr>
-                                <td>1111</td>
-                                <td>1112</td>
-                            </tr>
-                            <tr>
-                                <td>1111</td>
-                                <td>1112</td>
-                            </tr>
-                            <tr>
-                                <td>1111</td>
-                                <td>1112</td>
-                            </tr>
-                            <tr>
-                                <td>1111</td>
-                                <td>1112</td>
-                            </tr>
-                            <tr>
-                                <td>1111</td>
-                                <td>1112</td>
-                            </tr>
-                            <tr>
-                                <td>1111</td>
-                                <td>1112</td>
-                            </tr>
-                        </tbody>
-                    </table>    
+                <div class="col-md-12 text-center">
+                    <h2>바다의 신선함을 품은 서울의 중심, 노량진수산시장</h2>
+                    <p>노량진수산시장은 매일 새벽, 전국 각지에서 모여든 신선한 수산물이 활기찬 경매를 통해<br>
+                        거래되는 대한민국 대표 수산물 도매시장입니다. <br>
+                        전통과 현대가 어우러진 이곳에서 살아있는 바다의 생동감을 직접 느껴보세요.</p>
+                </div>
+            </div>
+            <div class="row mt-10">
+                <div class="col-md-3">
+                    <a href="#">
+                        <div class="con1">
+                            영업시간 안내 ⇀
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="con2">
+                            시설현황 안내 ⇀
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-5">
+                    <div class="noti">
+                        <div class="d-flex">
+                            <p>공지사항</p>
+                            <a href="#">더보기 ></a>
+                        </div>
+                        <ul>
+                            <li><a href="#">
+                                    <div class="d-flex">
+                                        <p>창고 10,23호 임대입주자 모집 입찰 공고</p> <span>2025.05.29</span>
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="d-flex">
+                                        <p>창고 10,23호 임대입주자 모집 입찰 공고</p> <span>2025.05.29</span>
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="d-flex">
+                                        <p>창고 10,23호 임대입주자 모집 입찰 공고</p> <span>2025.05.29</span>
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="d-flex">
+                                        <p>창고 10,23호 임대입주자 모집 입찰 공고</p> <span>2025.05.29</span>
+                                    </div>
+                                </a></li>
+                        </ul>
                     </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="con3">
+                        <img src="assets/images/june.png" alt="6월해산물">
+                        <div class="overlay">
+                            <a href="#">자세히보기 ⇀</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <img src="assets/images/icons/logo-w 10.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="d-flex">
+                        <a href="#">개인정보취급방침</a>
+                        <a href="#">안전/보건 경영방침</a>
+                        <a href="#">영상정보처리기기 운영/관리 방침</a>
+                        <a href="#">경영공시</a>
+                    </div>
+                    <div class="d-flex footxt">
+                        <p>사업자등록번호 : 108-81-14995</p>
+                        <p>주소 : 서울특별시 동작구 노들로 674</p>
+                        <p>대표전화 : 02-2254-8000~1</p>
+                    </div>
+                    <p class="copy">Copyright 2025. NORYANGJIN FISHERIES WHOLESALE MARKET. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
+        /* main-sec01-swiper */
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 4,
+            slidesPerView: 1,
             spaceBetween: 30,
             centeredSlides: true,
             pagination: {
@@ -259,11 +452,24 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+            breakpoints: {
+
+                576: {
+                    slidesPerView: 2,  //브라우저가 576보다 클 때
+                    spaceBetween: 30,
+                },
+                768: {
+                    slidesPerView: 3, 
+                    spaceBetween: 30,
+                },
+                1200: {
+                    slidesPerView: 4, 
+                    spaceBetween: 30,
+                },
+            },
         });
 
-        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-            target: '#navbar-example'
-        })
+
     </script>
 </body>
 

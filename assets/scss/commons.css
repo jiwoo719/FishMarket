@@ -24,18 +24,47 @@ body {
   line-height: 1.4;
 }
 body h1 {
-  font-family: var(--my-font-tena);
-  font-size: 3.63rem;
+  font-family: var(--my-font-pret);
+  font-size: 5rem;
+  color: #fff;
 }
 body h2 {
-  font-size: 2.25rem;
-  font-weight: 700;
+  font-family: var(--my-font-tena);
+  font-size: 3.63rem;
 }
 body h3 {
   font-family: var(--my-font-na);
   font-size: 3rem;
 }
 body h4 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+body .main-subt-m {
   font-size: 1.5rem;
   font-weight: 500;
+}
+body .main-subt-r {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+body .body-txt20-m {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+body .body-txt20-r {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+body .body-txt18-m {
+  font-size: 1.13rem;
+  font-weight: 500;
+}
+body .body-txt18-r {
+  font-size: 1.13rem;
+  font-weight: 400;
+}
+body .body-txt16-r {
+  font-size: 1rem;
+  font-weight: 400;
 }/*# sourceMappingURL=commons.css.map */

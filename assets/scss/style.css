@@ -1,7 +1,22 @@
 @import url("../scss/commons.css");
 /* nav */
 nav {
-  height: 100px;
+  height: 80px;
+}
+nav .container {
+  display: none;
+}
+nav .container .d-flex {
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+nav .container .d-flex .sub-menu-bg {
+  position: absolute;
+  background: rgba(240, 251, 255, 0.5);
+  height: 150px;
+  display: none;
+  width: 100%;
 }
 
 /* kv */
@@ -17,20 +32,20 @@ nav {
 .kv .container .row .txtbox h3 {
   color: #fff;
 }
-.kv .container .row .txtbox h1 {
+.kv .container .row .txtbox h2 {
   margin-top: 30px;
   color: #fff;
 }
-.kv .container .row .txtbox h1 .pt1 {
+.kv .container .row .txtbox h2 .pt1 {
   color: var(--my-main-three);
 }
-.kv .container .row .txtbox h1 .pt2 {
+.kv .container .row .txtbox h2 .pt2 {
   color: var(--my-main-four);
 }
 
 /* sec01 */
 .sec01 .container {
-  padding: 200px 0 100px 0;
+  padding: 200px 20px 100px 20px;
 }
 .sec01 .container .row .toptxt h4 {
   margin-top: 10px;
@@ -71,11 +86,12 @@ nav {
   border-radius: 50px;
 }
 .sec01 .container .content .swiper .con:hover {
-  border: 2px solid var(--my-main-two);
+  border: 1px solid var(--my-main-two);
   transition: all 0.3s ease;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
 }
-.sec01 .container .content .swiper-button-next, .sec01 .container .content .swiper-button-prev {
+.sec01 .container .content .swiper-button-next,
+.sec01 .container .content .swiper-button-prev {
   color: var(--my-main-two);
 }
 
@@ -84,31 +100,251 @@ nav {
   background: var(--my-back-one);
 }
 .sec02 .container {
-  padding: 100px 0;
+  padding: 100px 20px;
 }
-.sec02 .container .mt-5 {
-  margin-top: 50px !important;
+.sec02 .container .pt-5 {
+  padding-top: 50px !important;
 }
-.sec02 .container .mt-5 .content {
+.sec02 .container .pt-5 .content {
   background: #fff;
   border-radius: 20px;
 }
-.sec02 .container .mt-5 .content .table-content table thead {
+.sec02 .container .pt-5 .content .table-content {
+  padding: 50px 100px;
+  height: 550px;
+}
+.sec02 .container .pt-5 .content .table-content .tablebox {
+  height: 450px;
+  overflow-y: auto;
+}
+.sec02 .container .pt-5 .content .table-content .tablebox table {
+  margin: 0 auto;
+  width: 1050px;
+}
+.sec02 .container .pt-5 .content .table-content .tablebox table thead {
   background: var(--my-back-two);
 }
-.sec02 .container .mt-5 .content .table-content table thead tr {
-  border-radius: 20px;
+.sec02 .container .pt-5 .content .table-content .tablebox table thead tr {
+  height: 60px;
 }
-.sec02 .container .mt-5 .content .table-content table thead tr td {
+.sec02 .container .pt-5 .content .table-content .tablebox table tbody tr {
+  height: 60px;
+  border-bottom: 1px solid var(--my-back-two);
+}
+.sec02 .container .pt-5 .content .table-content .tablebox table tbody tr .line {
+  border-right: 1px solid var(--my-back-two);
+}
+.sec02 .container .pt-5 .content .table-content .tablebox table tbody tr .red {
+  color: #FF6565;
+}
+.sec02 .container .pt-5 .content .table-content .tablebox table tbody tr .blue {
+  color: var(--my-main-two);
+}
+.sec02 .container .pt-5 .content .table-content .tablebox::-webkit-scrollbar {
+  background: var(--my-back-two);
+  width: 8px;
+  border-radius: 50px;
+}
+.sec02 .container .pt-5 .content .table-content .tablebox::-webkit-scrollbar-thumb {
+  width: 10px;
+  background: #999;
+  border-radius: 50px;
+}
+
+/* sec03 */
+.sec03 .container {
+  padding: 100px 20px;
+}
+.sec03 .container .row .col-md-12 h2 {
+  font-size: 3rem;
+  color: var(--my-main-two);
+}
+.sec03 .container .row .col-md-12 p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.sec03 .container .mt-10 {
+  margin-top: 100px;
+}
+.sec03 .container .mt-10 .col-md-3 a {
+  color: #fff;
   font-size: 1.25rem;
-  font-weight: 500;
-  padding-right: 88px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.sec03 .container .mt-10 .col-md-3 a .con1 {
+  box-sizing: border-box;
+  background: var(--my-main-two);
+  padding: 20px 130px 58px 20px;
+  border-radius: 10px;
+}
+.sec03 .container .mt-10 .col-md-3 a {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+.sec03 .container .mt-10 .col-md-3 a .con2 {
+  margin-top: 24px;
+  box-sizing: border-box;
+  background: var(--my-main-one);
+  padding: 20px 130px 58px 20px;
+  border-radius: 10px;
+}
+.sec03 .container .mt-10 .col-md-3 a:hover {
+  -webkit-text-decoration: 1px solid underline;
+          text-decoration: 1px solid underline;
+  text-underline-offset: 7px;
+}
+.sec03 .container .mt-10 .col-md-5 .noti {
+  background-color: var(--my-back-two);
+  padding: 20px;
+  border-radius: 10px;
+}
+.sec03 .container .mt-10 .col-md-5 .noti .d-flex {
+  justify-content: space-between;
+  align-items: center;
+}
+.sec03 .container .mt-10 .col-md-5 .noti .d-flex p {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+.sec03 .container .mt-10 .col-md-5 .noti .d-flex a {
+  font-size: 0.88rem;
+  font-weight: 400;
+  color: #555;
+  text-decoration: none;
+}
+.sec03 .container .mt-10 .col-md-5 .noti .d-flex a:hover {
+  -webkit-text-decoration: 1px solid underline;
+          text-decoration: 1px solid underline;
+  text-underline-offset: 2px;
+  text-decoration-color: #999;
+}
+.sec03 .container .mt-10 .col-md-5 .noti ul {
+  margin: 0;
+}
+.sec03 .container .mt-10 .col-md-5 .noti ul li {
   padding-top: 20px;
-  padding-bottom: 20px;
 }
-.sec02 .container .mt-5 .content .table-content table thead tr .start {
-  padding-left: 62px;
+.sec03 .container .mt-10 .col-md-5 .noti ul li a {
+  color: #555;
+  text-decoration: none;
 }
-.sec02 .container .mt-5 .content .table-content table thead tr .end {
-  padding-right: 62px;
+.sec03 .container .mt-10 .col-md-5 .noti ul li a .d-flex p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.sec03 .container .mt-10 .col-md-5 .noti ul li a .d-flex span {
+  font-size: 0.88rem;
+  font-weight: 300;
+}
+.sec03 .container .mt-10 .col-md-5 .noti ul li a:hover {
+  -webkit-text-decoration: 1px solid underline;
+          text-decoration: 1px solid underline;
+  text-underline-offset: 3px;
+  text-decoration-color: #999;
+}
+.sec03 .container .mt-10 .col-md-5 .noti ul li::marker {
+  color: #555;
+}
+.sec03 .container .mt-10 .col-md-4 .con3 {
+  height: 237px;
+  border-radius: 10px;
+  position: relative;
+}
+.sec03 .container .mt-10 .col-md-4 .con3 img {
+  width: 100%;
+  height: 237px;
+}
+.sec03 .container .mt-10 .col-md-4 .con3 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.2s;
+  border-radius: 10px;
+}
+.sec03 .container .mt-10 .col-md-4 .con3 .overlay a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.sec03 .container .mt-10 .col-md-4 .con3 .overlay a:hover {
+  -webkit-text-decoration: 1px solid underline;
+          text-decoration: 1px solid underline;
+  text-underline-offset: 3px;
+}
+.sec03 .container .mt-10 .col-md-4 .con3:hover .overlay {
+  opacity: 1;
+}
+
+/* footer */
+footer {
+  background: #00364A;
+}
+footer .container {
+  padding: 50px 20px;
+}
+footer .container .col-md-9 .d-flex {
+  gap: 50px;
+}
+footer .container .col-md-9 .d-flex a {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+}
+footer .container .col-md-9 .footxt {
+  padding-top: 20px;
+}
+footer .container .col-md-9 .footxt p {
+  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 300;
+  margin: 0;
+}
+footer .container .col-md-9 .copy {
+  padding-top: 10px;
+  font-size: 0.88rem;
+  font-weight: 300;
+  color: #fff;
+  margin: 0;
+}
+
+/* media */
+@media (max-width: 1320px) {
+  /* kv */
+  .kv {
+    height: 600px;
+  }
+  /* sec02 */
+  .sec02 .container .pt-5 .content .table-content {
+    padding: 50px 90px;
+  }
+  .sec02 .container .pt-5 .content .table-content .tablebox table {
+    width: 900px;
+  }
+  /* sec03 */
+  .sec03 .container .mt-10 .col-md-3 a .con1 {
+    padding: 20px 106px 58px 20px;
+  }
+  .sec03 .container .mt-10 .col-md-3 a .con2 {
+    padding: 20px 106px 58px 20px;
+  }
+}
+@media (max-width: 1200px) {
+  /* kv */
+  .kv {
+    height: 500px;
+  }
 }/*# sourceMappingURL=style.css.map */
