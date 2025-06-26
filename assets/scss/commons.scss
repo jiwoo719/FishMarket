@@ -28,9 +28,10 @@ body {
         font-family: var(--my-font-pret);
         font-size: 5rem;
         color: #fff;
+        margin-bottom: 0;
     }
 
-    h2{
+    h2 {
         font-family: var(--my-font-tena);
         font-size: 3.63rem;
     }
@@ -40,36 +41,337 @@ body {
         font-size: 3rem;
     }
 
-    h4{
+    h4 {
         font-size: 2.25rem;
         font-weight: 700;
+        line-height: 1.4;
     }
-    .main-subt-m{
+
+    .main-subt-m {
         font-size: 1.5rem;
         font-weight: 500;
     }
-    .main-subt-r{
+
+    .main-subt-r {
         font-size: 1.5rem;
         font-weight: 400;
     }
-    .body-txt20-m{
+
+    .body-txt20-m {
         font-size: 1.25rem;
         font-weight: 500;
     }
-    .body-txt20-r{
+
+    .body-txt20-r {
         font-size: 1.25rem;
         font-weight: 400;
     }
-    .body-txt18-m{
+
+    .body-txt18-m {
         font-size: 1.13rem;
         font-weight: 500;
     }
-    .body-txt18-r{
+
+    .body-txt18-r {
         font-size: 1.13rem;
         font-weight: 400;
     }
-    .body-txt16-r{
+
+    .body-txt16-r {
         font-size: 1rem;
         font-weight: 400;
+    }
+    .container{
+        padding: 100px 20px;
+    }
+    img{
+        width: 100%;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+    }
+    a{
+        text-decoration: none;
+    }
+    p{
+        margin: 0;
+    }
+    .banner{
+        height: 600px;
+    }
+}
+
+/* mmedia */
+
+@media (max-width: 1400px){
+    body{
+        h1{
+            font-size: 4.2rem;
+        }
+        .banner{
+            height: 550px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    body {
+        h1 {
+            font-family: var(--my-font-pret);
+            font-size: 3.6rem;
+            color: #fff;
+        }
+
+        h2 {
+            font-family: var(--my-font-tena);
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-family: var(--my-font-na);
+            font-size: 2.5rem;
+        }
+
+        h4 {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .main-subt-m {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .main-subt-r {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+
+        .body-txt20-m {
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+
+        .body-txt20-r {
+            font-size: 1.25rem;
+            font-weight: 400;
+        }
+
+        .body-txt18-m {
+            font-size: 1.13rem;
+            font-weight: 500;
+        }
+
+        .body-txt18-r {
+            font-size: 1.13rem;
+            font-weight: 400;
+        }
+
+        .body-txt16-r {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        footer{
+            .container{
+                .row{
+                    .col-md-8{
+                        .d-flex{
+                            gap: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        .banner{
+            height: 500px;
+        }
+    }
+}
+
+@media (max-width: 960px){
+    body {
+        h1 {
+            font-family: var(--my-font-pret);
+            font-size: 3.5rem;
+            color: #fff;
+        }
+
+        h2 {
+            font-family: var(--my-font-tena);
+            font-size: 2.5rem;
+        }
+
+        h3 {
+            font-family: var(--my-font-na);
+            font-size: 2rem;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .main-subt-m {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .main-subt-r {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+
+        .body-txt20-m {
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+
+        .body-txt20-r {
+            font-size: 1.25rem;
+            font-weight: 400;
+        }
+
+        .body-txt18-m {
+            font-size: 1.13rem;
+            font-weight: 500;
+        }
+
+        .body-txt18-r {
+            font-size: 1.13rem;
+            font-weight: 400;
+        }
+
+        .body-txt16-r {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        .container{
+            padding: 80px 20px;
+        }
+        /* kv */
+        .kv{
+            height: 400px;
+            .container{
+                .row{
+                    .txtbox{
+                        padding: 75px 0;
+                    }
+                }
+            }
+        }
+        /* sec01 */
+        .sec01{
+            .container{
+                padding: 100px 20px 80px 20px;
+            }
+        }
+        /* footer */
+        footer{
+            .container{
+                .row{
+                    .col-md-8{
+                        .d-flex{
+                            flex-wrap: wrap;
+                            gap: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    h2 {
+        font-family: var(--my-font-tena);
+        font-size: 2rem;
+        }
+
+    h3 {
+        font-family: var(--my-font-na);
+        font-size: 1.5rem;
+    }
+    .banner{
+        height: 400px;
+    }
+    /* nav */
+    nav{
+        height: 60px;
+    }
+    /* kv */
+    .kv{
+        height: 300px;
+        .container{
+            .row{
+                .txtbox{
+                    padding: 30px 0;
+                }
+            }
+        }
+    }
+    footer{
+        .container{
+            .row{
+                .col-md-8{
+                    .d-flex{
+                        a{
+                            font-size: 0.88rem;
+                        }
+                        p{
+                            font-size: 0.75rem;
+                        }
+                    }
+                    .copy{
+                        font-size: 0.75rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px){
+    h2 {
+        font-family: var(--my-font-tena);
+        font-size: 1.9rem;
+        }
+
+    /* nav */
+    nav{
+        height: 60px;
+    }
+    /* kv */
+    .kv{
+        height: 300px;
+        .container{
+            .row{
+                .txtbox{
+                    padding: 30px 0;
+                }
+            }
+        }
+    }
+    /* sc03 */
+    .sec03{
+        .container{
+            .row{
+                .col-md-12{
+                    display: none;
+                }
+            }
+        }
+    }
+    /* footer */
+    footer{
+        .container{
+            .row{
+                .col-md-3{
+                    .logo{
+                        width: 50%;
+                    }
+                }
+            }
+        }
     }
 }

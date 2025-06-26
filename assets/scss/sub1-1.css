@@ -1,0 +1,216 @@
+@import url("../scss/commons.css");
+/* nav */
+/* banner */
+.banner {
+  position: relative;
+  top: 0;
+  background: url("../images/sub1-1-banner.png");
+}
+.banner nav {
+  position: absolute;
+  top: 0;
+  height: 80px;
+  background: transparent;
+}
+.banner nav .container {
+  padding: 0;
+}
+.banner .container {
+  padding: 200px 20px;
+}
+.banner .container .row .col-md-12 .body-txt20-m {
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+/* sec01 */
+.sec01 .container {
+  padding: 200px 20px 100px 20px;
+}
+
+/* sec02 */
+.sec02 .container .row .col-md-5 .con {
+  height: 700px;
+}
+.sec02 .container .row .col-md-5 .con img {
+  height: 100%;
+}
+.sec02 .container .row .col-md-6 .bg-txt {
+  margin-top: 20px;
+  font-size: 150px;
+  font-weight: 800;
+  color: var(--my-back-two);
+  line-height: 1;
+}
+.sec02 .container .row .col-md-6 .txtbottom {
+  margin-top: 50px;
+}
+.sec02 .container .row .col-md-6 .txtbottom .body-txt18-m {
+  color: #999;
+}
+.sec02 .container .row .col-md-6 .txtbottom .body-txt18-r {
+  margin-top: 50px;
+  width: 75%;
+}
+
+/* sec03 */
+.sec03 .container .row {
+  flex-wrap: wrap-reverse;
+}
+.sec03 .container .row .col-md-5 .con {
+  height: 700px;
+}
+.sec03 .container .row .col-md-5 .con img {
+  height: 100%;
+}
+.sec03 .container .row .col-md-6 .bg-txt {
+  margin-top: 20px;
+  font-size: 150px;
+  font-weight: 800;
+  color: var(--my-back-two);
+  line-height: 1;
+}
+.sec03 .container .row .col-md-6 .txtbottom {
+  margin-top: 50px;
+}
+.sec03 .container .row .col-md-6 .txtbottom .body-txt18-m {
+  color: #999;
+}
+.sec03 .container .row .col-md-6 .txtbottom .body-txt18-r {
+  margin-top: 50px;
+  width: 75%;
+}
+
+/* sec04 */
+.sec04 .container .row .col-md-5 .con {
+  height: 700px;
+}
+.sec04 .container .row .col-md-5 .con img {
+  height: 100%;
+}
+.sec04 .container .row .col-md-6 .bg-txt {
+  margin-top: 20px;
+  font-size: 150px;
+  font-weight: 800;
+  color: var(--my-back-two);
+  line-height: 1;
+}
+.sec04 .container .row .col-md-6 .txtbottom {
+  margin-top: 50px;
+}
+.sec04 .container .row .col-md-6 .txtbottom .body-txt18-m {
+  color: #999;
+}
+.sec04 .container .row .col-md-6 .txtbottom .body-txt18-r {
+  margin-top: 50px;
+  width: 72%;
+}
+.sec04 .container .row .col-md-6 .txtbottom .txt1 {
+  margin-top: 20px;
+  font-size: 1.13rem;
+  font-weight: 400;
+}
+.sec04 .container .row .col-md-6 .txtbottom .txt1 .txt2 {
+  margin-left: 15px;
+  font-size: 1.13rem;
+  font-weight: 500;
+}
+
+/* footer */
+footer {
+  background: #00364A;
+}
+footer .container {
+  padding: 50px 20px;
+}
+footer .container .col-md-3 .logo {
+  width: 80%;
+}
+footer .container .col-md-8 .d-flex {
+  gap: 50px;
+}
+footer .container .col-md-8 .d-flex a {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+}
+footer .container .col-md-8 .footxt {
+  padding-top: 20px;
+}
+footer .container .col-md-8 .footxt p {
+  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 300;
+  margin: 0;
+}
+footer .container .col-md-8 .copy {
+  padding-top: 10px;
+  font-size: 0.88rem;
+  font-weight: 300;
+  color: #fff;
+  margin: 0;
+}
+
+/* media */
+@media (max-width: 1400px) {
+  .banner .container {
+    padding: 180px 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .banner .container {
+    padding: 160px 20px;
+  }
+}
+@media (max-width: 960px) {
+  .sec02 .container .row .col-md-5 .con {
+    height: 500px;
+  }
+  .sec02 .container .row .col-md-6 .bg-txt {
+    font-size: 100px;
+  }
+  .sec02 .container .row .col-md-6 .txtbottom {
+    margin-top: 30px;
+  }
+  .sec02 .container .row .col-md-6 .txtbottom .body-txt18-r {
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .sec03 .container .row .col-md-5 .con {
+    height: 500px;
+  }
+  .sec03 .container .row .col-md-6 .bg-txt {
+    font-size: 100px;
+  }
+  .sec03 .container .row .col-md-6 .txtbottom {
+    margin-top: 30px;
+  }
+  .sec03 .container .row .col-md-6 .txtbottom .body-txt18-r {
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .sec04 .container .row .col-md-5 .con {
+    height: 500px;
+  }
+  .sec04 .container .row .col-md-6 .bg-txt {
+    font-size: 100px;
+  }
+  .sec04 .container .row .col-md-6 .txtbottom {
+    margin-top: 30px;
+  }
+  .sec04 .container .row .col-md-6 .txtbottom .body-txt18-r {
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .sec04 .container .row .col-md-6 .txtbottom .txt1 {
+    font-size: 1rem;
+  }
+  .sec04 .container .row .col-md-6 .txtbottom .txt1 .txt2 {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=sub1-1.css.map */
