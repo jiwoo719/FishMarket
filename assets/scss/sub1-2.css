@@ -1,13 +1,11 @@
 @import url("../scss/commons.css");
 /* nav */
 header {
-  width: 100%;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  top: 0;
+  position: relative;
   height: 80px;
-  background: transparent;
+  background-color: #fff;
 }
 header .logo {
   padding-left: 300px;
@@ -24,35 +22,34 @@ header .sub-menu-bg {
 header nav {
   position: absolute;
   right: 0px;
-  top: 35%;
+  top: 20px;
   z-index: 10;
-  margin-right: 250px;
+  margin-right: 300px;
 }
 header nav .main-menu {
-  gap: 80px;
+  gap: 70px;
+  margin-bottom: 0;
 }
-header nav .main-menu .text-end {
-  position: relative;
-}
-header nav .main-menu .text-end a {
+header nav .main-menu .text-center a {
+  display: block;
+  padding: 10px;
   font-size: 1.25rem;
-  color: #fff;
+  color: var(--my-txt-main);
 }
-header nav .main-menu .text-end a:hover {
+header nav .main-menu .text-center a:hover {
   color: var(--my-main-one);
 }
-header nav .main-menu .text-end .sub-menu {
-  width: 150px;
-  position: absolute;
-  top: 160%;
+header nav .main-menu .text-center .sub-menu {
+  padding-top: 20px;
   display: none;
-  text-align: end;
 }
-header nav .main-menu .text-end .sub-menu li a {
-  font-size: 1.25rem;
+header nav .main-menu .text-center .sub-menu li a {
   color: #fff;
+  padding: 10px;
+  display: block;
+  box-sizing: border-box;
 }
-header nav .main-menu .text-end .sub-menu li a:hover {
+header nav .main-menu .text-center .sub-menu li a:hover {
   color: var(--my-main-one);
   -webkit-text-decoration: 1px solid underline var(--my-main-one);
           text-decoration: 1px solid underline var(--my-main-one);
@@ -69,4 +66,22 @@ header nav .main-menu .text-end .sub-menu li a:hover {
   color: #fff;
   margin-top: 30px;
   margin-bottom: 0;
+}
+
+/* sec01 */
+.sec01 .container {
+  padding: 200px 20px 100px 20px;
+}
+.sec01 .container .row .col-md-12 .top-t {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.sec01 .container .mt-10 {
+  margin-top: 100px;
+}
+
+/* sec02 */
+.sec02 .container .row .col-md-9 .main-subt-m {
+  font-weight: 700;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=sub1-2.css.map */
