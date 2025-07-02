@@ -71,6 +71,10 @@ body .body-txt16-r {
   font-size: 1rem;
   font-weight: 400;
 }
+body .body-txt16-m {
+  font-size: 1rem;
+  font-weight: 500;
+}
 body .container {
   padding: 100px 20px;
 }

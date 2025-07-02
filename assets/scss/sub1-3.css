@@ -1,0 +1,229 @@
+@import url("../scss/commons.css");
+/* nav */
+header {
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 80px;
+  background-color: #fff;
+}
+header .logo {
+  padding-left: 300px;
+}
+header .sub-menu-bg {
+  display: none;
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  top: 80px;
+  background-color: rgba(240, 251, 255, 0.5);
+  z-index: 10;
+}
+header nav {
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  z-index: 10;
+  margin-right: 300px;
+}
+header nav .main-menu {
+  gap: 70px;
+  margin-bottom: 0;
+}
+header nav .main-menu .text-center a {
+  display: block;
+  padding: 10px;
+  font-size: 1.25rem;
+  color: var(--my-txt-main);
+}
+header nav .main-menu .text-center a:hover {
+  color: var(--my-main-one);
+}
+header nav .main-menu .text-center .sub-menu {
+  padding-top: 20px;
+  display: none;
+}
+header nav .main-menu .text-center .sub-menu li a {
+  color: #fff;
+  padding: 10px;
+  display: block;
+  box-sizing: border-box;
+}
+header nav .main-menu .text-center .sub-menu li a:hover {
+  color: var(--my-main-one);
+  -webkit-text-decoration: 1px solid underline var(--my-main-one);
+          text-decoration: 1px solid underline var(--my-main-one);
+}
+
+/* banner */
+.banner {
+  background: url("../images/sub1-3-banner.png");
+}
+.banner .container {
+  padding: 200px 20px;
+}
+.banner .container .row .col-md-12 .body-txt20-m {
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+/* sec01 */
+.sec01 .container {
+  padding: 200px 20px;
+}
+.sec01 .container .navbar {
+  justify-content: center;
+}
+.sec01 .container .navbar .nav {
+  border-bottom: 1px solid #999;
+}
+.sec01 .container .navbar .nav .nav-item .nav-link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #999;
+  width: 200px;
+  border: none;
+}
+.sec01 .container .navbar .nav .nav-item .nav-link:hover {
+  color: var(--my-main-two);
+  transition: all 0.5s ease;
+}
+.sec01 .container .navbar .nav .nav-item .nav-link.active {
+  border-bottom: 3px solid var(--my-main-two);
+  color: var(--my-main-two);
+  transition: all 0.3s ease;
+}
+.sec01 .container .p-20 {
+  padding: 200px 0 100px 0;
+}
+.sec01 .container .container-fluid {
+  padding: 100px 0;
+}
+.sec01 .container .container-fluid .row1 .align-center {
+  display: flex;
+  align-items: center;
+}
+.sec01 .container .container-fluid .row1 .align-center .con {
+  width: 100%;
+}
+.sec01 .container .container-fluid .row1 .col-md-5 .txtbox1 {
+  align-items: center;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ddd;
+}
+.sec01 .container .container-fluid .row1 .col-md-5 .txtbox1 .year {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-right: 50px;
+}
+.sec01 .container .container-fluid .row1 .col-md-5 .txtbox1 .month {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #333;
+  padding-right: 30px;
+}
+.sec01 .container .container-fluid .row1 .col-md-5 .txtbox1 .des {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.sec01 .container .container-fluid .row1 .col-md-5 .txtbox2 {
+  align-items: center;
+  padding: 50px 0;
+  border-bottom: 1px solid #ddd;
+}
+.sec01 .container .container-fluid .row1 .col-md-5 .txtbox2 .year {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-right: 50px;
+}
+.sec01 .container .container-fluid .row1 .col-md-5 .txtbox2 .month {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #333;
+  padding-right: 30px;
+}
+.sec01 .container .container-fluid .row1 .col-md-5 .txtbox2 .des {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.sec01 .container .container-fluid .row1 .col-md-5 .txtbox3 {
+  align-items: center;
+  padding: 50px 0;
+}
+.sec01 .container .container-fluid .row1 .col-md-5 .txtbox3 .year {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-right: 50px;
+}
+.sec01 .container .container-fluid .row1 .col-md-5 .txtbox3 .month {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #333;
+  padding-right: 30px;
+}
+.sec01 .container .container-fluid .row1 .col-md-5 .txtbox3 .des {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.sec01 .container .container-fluid .row2 .col-md-5 .txtbox1 {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ddd;
+}
+.sec01 .container .container-fluid .row2 .col-md-5 .txtbox1 .txt .year {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-right: 50px;
+}
+.sec01 .container .container-fluid .row2 .col-md-5 .txtbox1 .txt2 {
+  margin: 0;
+}
+.sec01 .container .container-fluid .row2 .col-md-5 .txtbox1 .txt2 .d-flex .month {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #333;
+  padding-right: 30px;
+}
+.sec01 .container .container-fluid .row2 .col-md-5 .txtbox1 .txt2 .d-flex .des {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.sec01 .container .container-fluid .row2 .col-md-5 .txtbox2 {
+  align-items: center;
+  padding: 50px 0;
+  border-bottom: 1px solid #ddd;
+}
+.sec01 .container .container-fluid .row2 .col-md-5 .txtbox2 .year {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-right: 50px;
+}
+.sec01 .container .container-fluid .row2 .col-md-5 .txtbox2 .month {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #333;
+  padding-right: 30px;
+}
+.sec01 .container .container-fluid .row2 .col-md-5 .txtbox2 .des {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.sec01 .container .container-fluid .row2 .col-md-5 .txtbox3 {
+  align-items: center;
+  padding: 50px 0;
+}
+.sec01 .container .container-fluid .row2 .col-md-5 .txtbox3 .year {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-right: 50px;
+}
+.sec01 .container .container-fluid .row2 .col-md-5 .txtbox3 .month {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #333;
+  padding-right: 30px;
+}
+.sec01 .container .container-fluid .row2 .col-md-5 .txtbox3 .des {
+  font-size: 1rem;
+  font-weight: 500;
+}/*# sourceMappingURL=sub1-3.css.map */
