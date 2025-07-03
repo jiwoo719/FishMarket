@@ -90,20 +90,22 @@ header {
 /* sec01 */
 .sec01 {
   .container {
-    padding: 200px 20px;
+    padding: 200px 20px 100px 20px;
 
     .navbar {
       justify-content: center;
-
+      position: sticky;
+      top: 0;
+      background-color: #fff;
       .nav {
         border-bottom: 1px solid #999;
-
+        gap: 50px;
+        justify-content: space-between;
         .nav-item {
           .nav-link {
             font-size: 1.5rem;
             font-weight: 700;
             color: #999;
-            width: 200px;
             border: none;
           }
 
@@ -288,6 +290,131 @@ header {
             }
           }
         }
+      }
+      .row3 {
+        .col-md-5 {
+          .txtbox1 {
+            align-items: center;
+            padding-bottom: 50px 0;
+            border-bottom: 1px solid #ddd;
+
+            .year {
+              font-size: 1.5rem;
+              font-weight: 700;
+              padding-right: 50px;
+            }
+
+            .month {
+              font-size: 1.13rem;
+              font-weight: 700;
+              color: #333;
+              padding-right: 30px;
+            }
+
+            .des {
+              font-size: 1rem;
+              font-weight: 500;
+            }
+          }
+          .txtbox2 {
+            padding: 50px 0;
+            border-bottom: 1px solid #ddd;
+            .txt {
+              .year {
+                font-size: 1.5rem;
+                font-weight: 700;
+                padding-right: 50px;
+              }
+            }
+
+            .txt2 {
+              margin: 0;
+              .d-flex {
+                .month {
+                  font-size: 1.13rem;
+                  font-weight: 700;
+                  color: #333;
+                  padding-right: 30px;
+                }
+
+                .des {
+                  font-size: 1rem;
+                  font-weight: 500;
+                }
+              }
+            }
+          }
+          
+          .txtbox3 {
+            align-items: center;
+            padding: 50px 0;
+
+            .year {
+              font-size: 1.5rem;
+              font-weight: 700;
+              padding-right: 50px;
+            }
+
+            .month {
+              font-size: 1.13rem;
+              font-weight: 700;
+              color: #333;
+              padding-right: 30px;
+            }
+
+            .des {
+              font-size: 1rem;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* footer */
+footer {
+  background: #00364A;
+
+  .container {
+    padding: 50px 20px;
+
+    .col-md-3 {
+      .logo {
+        width: 80%;
+      }
+    }
+
+    .col-md-8 {
+      .d-flex {
+        gap: 50px;
+
+        a {
+          font-size: 1rem;
+          font-weight: 300;
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+
+      .footxt {
+        padding-top: 20px;
+
+        p {
+          color: #fff;
+          font-size: 0.88rem;
+          font-weight: 300;
+          margin: 0;
+        }
+      }
+
+      .copy {
+        padding-top: 10px;
+        font-size: 0.88rem;
+        font-weight: 300;
+        color: #fff;
+        margin: 0;
       }
     }
   }

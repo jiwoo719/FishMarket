@@ -70,19 +70,23 @@ header nav .main-menu .text-center .sub-menu li a:hover {
 
 /* sec01 */
 .sec01 .container {
-  padding: 200px 20px;
+  padding: 200px 20px 100px 20px;
 }
 .sec01 .container .navbar {
   justify-content: center;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
 }
 .sec01 .container .navbar .nav {
   border-bottom: 1px solid #999;
+  gap: 50px;
+  justify-content: space-between;
 }
 .sec01 .container .navbar .nav .nav-item .nav-link {
   font-size: 1.5rem;
   font-weight: 700;
   color: #999;
-  width: 200px;
   border: none;
 }
 .sec01 .container .navbar .nav .nav-item .nav-link:hover {
@@ -226,4 +230,101 @@ header nav .main-menu .text-center .sub-menu li a:hover {
 .sec01 .container .container-fluid .row2 .col-md-5 .txtbox3 .des {
   font-size: 1rem;
   font-weight: 500;
+}
+.sec01 .container .container-fluid .row3 .col-md-5 .txtbox1 {
+  align-items: center;
+  padding-bottom: 50px 0;
+  border-bottom: 1px solid #ddd;
+}
+.sec01 .container .container-fluid .row3 .col-md-5 .txtbox1 .year {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-right: 50px;
+}
+.sec01 .container .container-fluid .row3 .col-md-5 .txtbox1 .month {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #333;
+  padding-right: 30px;
+}
+.sec01 .container .container-fluid .row3 .col-md-5 .txtbox1 .des {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.sec01 .container .container-fluid .row3 .col-md-5 .txtbox2 {
+  padding: 50px 0;
+  border-bottom: 1px solid #ddd;
+}
+.sec01 .container .container-fluid .row3 .col-md-5 .txtbox2 .txt .year {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-right: 50px;
+}
+.sec01 .container .container-fluid .row3 .col-md-5 .txtbox2 .txt2 {
+  margin: 0;
+}
+.sec01 .container .container-fluid .row3 .col-md-5 .txtbox2 .txt2 .d-flex .month {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #333;
+  padding-right: 30px;
+}
+.sec01 .container .container-fluid .row3 .col-md-5 .txtbox2 .txt2 .d-flex .des {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.sec01 .container .container-fluid .row3 .col-md-5 .txtbox3 {
+  align-items: center;
+  padding: 50px 0;
+}
+.sec01 .container .container-fluid .row3 .col-md-5 .txtbox3 .year {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-right: 50px;
+}
+.sec01 .container .container-fluid .row3 .col-md-5 .txtbox3 .month {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #333;
+  padding-right: 30px;
+}
+.sec01 .container .container-fluid .row3 .col-md-5 .txtbox3 .des {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* footer */
+footer {
+  background: #00364A;
+}
+footer .container {
+  padding: 50px 20px;
+}
+footer .container .col-md-3 .logo {
+  width: 80%;
+}
+footer .container .col-md-8 .d-flex {
+  gap: 50px;
+}
+footer .container .col-md-8 .d-flex a {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+}
+footer .container .col-md-8 .footxt {
+  padding-top: 20px;
+}
+footer .container .col-md-8 .footxt p {
+  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 300;
+  margin: 0;
+}
+footer .container .col-md-8 .copy {
+  padding-top: 10px;
+  font-size: 0.88rem;
+  font-weight: 300;
+  color: #fff;
+  margin: 0;
 }/*# sourceMappingURL=sub1-3.css.map */
