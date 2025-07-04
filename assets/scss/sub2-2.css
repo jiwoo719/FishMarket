@@ -100,19 +100,19 @@ header nav .main-menu .text-center .sub-menu li a:hover {
 }
 .sec01 .container .mt-10 .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body .time-top li {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 .sec01 .container .mt-10 .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body .rest {
   margin: 0;
 }
 .sec01 .container .mt-10 .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body .rest .tt {
   font-size: 1.13rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 .sec01 .container .mt-10 .col-md-6 .accordion .accordion-item .accordion-collapse .accordion-body .rest li {
   padding-top: 5px;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* footer */

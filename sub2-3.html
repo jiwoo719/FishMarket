@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>위치/주차안내</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/scss/sub2-3.css">
+</head>
+
+<body>
+  <!-- header -->
+  <header class="d-flex">
+    <a href="index.html" class="logo">
+      <img src="assets/images/icons/logo.png" alt="logo">
+    </a>
+    <div class="sub-menu-bg"></div>
+    <nav>
+      <ul class="main-menu d-flex">
+        <li class="text-center">
+          <a href="#none">노량진시장</a>
+          <ul class="sub-menu">
+            <li><a href="sub1-1.html">인사말</a></li>
+            <li><a href="sub1-2.html">시장소개</a></li>
+            <li><a href="sub1-3.html">연혁</a></li>
+          </ul>
+        </li>
+        <li class="text-center">
+          <a href="#none">시장안내</a>
+          <ul class="sub-menu">
+            <li><a href="sub2-1.html">시장현황</a></li>
+            <li><a href="sub2-2.html">영업시간</a></li>
+            <li><a href="#">위치/주차안내</a></li>
+          </ul>
+        </li>
+        <li class="text-center">
+          <a href="#none">시장정보</a>
+          <ul class="sub-menu">
+            <li><a href="#">이달의 수산물</a></li>
+          </ul>
+        </li>
+        <li class="text-center">
+          <a href="#none">시장소식</a>
+          <ul class="sub-menu">
+            <li><a href="#">공지사항</a></li>
+          </ul>
+        </li>
+        <li class="text-center">
+          <a href="#none">고객센터</a>
+          <ul class="sub-menu">
+            <li><a href="#">고객의 소리</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- banner -->
+  <section class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>위치/주차 안내</h1>
+          <p class="body-txt20-m">신선함과 활기로 가득한<br>
+            수산물의 중심지</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec01">
+    <div class="container">
+      <!-- sec01 title tab -->
+      <nav class="title-tab">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+          <button class="nav-link active" id="location-tab" data-bs-toggle="tab" data-bs-target="#location-con"
+            type="button" role="tab" aria-controls="location-con" aria-selected="true">위치 안내</button>
+
+          <button class="nav-link" id="parking-tab" data-bs-toggle="tab" data-bs-target="#parking-con" type="button"
+            role="tab" aria-controls="parking-con" aria-selected="false">주차 안내</button>
+        </div>
+      </nav>
+      <!-- sec01 content tab -->
+      <div class="tab-content" id="nav-tabContent">
+
+        <!-- 위치 안내 -->
+        <div class="container-fluid tab-pane fade show active" id="location-con" role="tabpanel"
+          aria-labelledby="location-tab">
+          <!-- 지도 -->
+          <div class="row">
+            <div class="col-md-12">
+              <h4>교통 좋은 도심 속에<br>
+                신선함이 머무는 시장입니다</h4>
+            </div>
+          </div>
+
+          <div class="row content1">
+            <div class="col-md-3">
+              <h4>지도</h4>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+              <div class="map-con">
+                <div class="map" id="map"></div>
+                <div class="address-con d-flex">
+                  <div class="address">
+                    <span class="add1">주소</span>
+                    <span class="add2">서울특별시 동작구 노들로 674</span>
+                    <span><a href="https://map.kakao.com/link/to/8205369" target="_blank" class="add3">길찾기</a></span>
+                  </div>
+                  <div class="call">
+                    <span class="num1">대표전화</span>
+                    <span class="num2">02-2254-8000~1</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 찾아오는 길 -->
+          <div class="row pt-10">
+            <div class="col-md-12">
+              <h4>찾아오시는 길</h4>
+            </div>
+          </div>
+
+          <div class="row content2">
+            <!-- con2 title tab-->
+            <nav class="content2-tab">
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+                <button class="nav-link active" id="subway-tab" data-bs-toggle="tab" data-bs-target="#subway-con"
+                  type="button" role="tab" aria-controls="subway-con" aria-selected="true">지하철 이용</button>
+
+                <button class="nav-link" id="nodle-tab" data-bs-toggle="tab" data-bs-target="#nodle-con" type="button"
+                  role="tab" aria-controls="nodle-con" aria-selected="false">노들로 방향</button>
+
+                <button class="nav-link" id="noryang-tab" data-bs-toggle="tab" data-bs-target="#noryang-con"
+                  type="button" role="tab" aria-controls="noryang-con" aria-selected="false">노량진역 방향</button>
+              </div>
+            </nav>
+
+            <!-- con2 content tab -->
+            <div class="tab-content" id="nav-tabContent">
+              <!-- 지하철 이용 -->
+              <div class="subway tab-pane fade show active" id="subway-con" role="tabpanel"
+                aria-labelledby="subway-tab">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="nodle-img">
+                      <img src="assets/images/subway.png" alt="지하철이용지도">
+                    </div>
+                  </div>
+                  <div class="col-md-1"></div>
+                  <div class="col-md-6">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                      <div class="accordion-item">
+                        <p class="accordion-header" id="panelsStayOpen-headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            승용차
+                          </button>
+                        </p>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                          aria-labelledby="panelsStayOpen-headingOne">
+                          <div class="accordion-body">
+                            <ul class="list">
+                              <li>노량진로 이용 : 수산시장 삼거리에서 수산시장고가차도를 이용해 진입</li>
+                              <li>노들로 이용 : 노들길 대방역 방향에서 진입</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <p class="accordion-header" id="panelsStayOpen-headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            지하철
+                          </button>
+                        </p>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                          aria-labelledby="panelsStayOpen-headingTwo">
+                          <div class="accordion-body">
+                            <ul class="list">
+                              <li class="pb-1">1호선 이용 시 : 1호선 플랫폼 → 1호선 9번출구 → 직진 150m → 노량진수산시장 입구 진입</li>
+                              <li>9호선 이용 시 : 7번출구 → 직진 70m → 지하보도 통과 → 노량진수산시장 입구 진입</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <p class="accordion-header" id="panelsStayOpen-headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            버스
+                          </button>
+                        </p>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                          aria-labelledby="panelsStayOpen-headingThree">
+                          <div class="accordion-body">
+                            <ul class="list">
+                              <li>노량진수산시장, CTS기독교TV 정류장 하차 → 지하보도 진입 → 노량진수산시장 입구 진입</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nodle tab-pane fade" id="nodle-con" role="tabpanel" aria-labelledby="nodle-tab">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="nodle-img">
+                      <img src="assets/images/nodle.png" alt="노들역방향지도">
+                    </div>
+                    <div class="txtbox">
+                      <p class="txt1">노들로 이용 시 오는 길 안내</p>
+                      <p class="txt2">노들로(김포공항방향) 대방역(여의교)에서 U턴 → 노들로(현충원방향) 진입 → 대방빗물펌프장 → 현대자동차 → 올림픽대로, 여의도(63빌딩)
+                        방면으로 우측방향 → 케이미트 → 노들로를 따라 400m 이동 → 우회전 후 주차장 램프진입</p>
+                    </div>
+                  </div>
+                  <div class="col-md-1"></div>
+                  <div class="col-md-6">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                      <div class="accordion-item">
+                        <p class="accordion-header" id="panelsStayOpen-headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            승용차
+                          </button>
+                        </p>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                          aria-labelledby="panelsStayOpen-headingOne">
+                          <div class="accordion-body">
+                            <ul class="list">
+                              <li>노들길 대방역 방향에서 진입</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <p class="accordion-header" id="panelsStayOpen-headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            지하철
+                          </button>
+                        </p>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                          aria-labelledby="panelsStayOpen-headingTwo">
+                          <div class="accordion-body">
+                            <ul class="list">
+                              <li class="pb-1">1호선 이용 시 : 9호선 환승통로 이용 → 9호선 7번 출구 145M 직진 → 지하보도 통과 → 노량진수산시장 입구 진입</li>
+                              <li>9호선 이용 시 : 9호선 7번 출구 145M 직진 → 지하보도 통과 → 노량진수산시장 입구 진입</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <p class="accordion-header" id="panelsStayOpen-headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            버스
+                          </button>
+                        </p>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                          aria-labelledby="panelsStayOpen-headingThree">
+                          <div class="accordion-body">
+                            <ul class="list">
+                              <li>노량진수산시장, CTS기독교TV 정류장 하차 → 지하보도 진입 → 노량진수산시장 입구 진입</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="noryang-con" role="tabpanel" aria-labelledby="noryang-tab">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="nodle-img">
+                      <img src="assets/images/noryang.png" alt="노량진역방향지도">
+                    </div>
+                    <div class="txtbox">
+                      <p class="txt1">노량진로 이용 시 오는 길 안내</p>
+                      <p class="txt2">대방역 사거리에서 노량진역 방향으로 이동 → 동작전화국 입구 사거리(노량진역 방향) → 동작경찰서까지 950m 직진 → 수산시장입구 삼거리까지
+                        350m 직진 → 수산시장 고가차도 방면으로 좌회전 → 수산시장 고가차도 이용 → 수산시장 방면 좌회전 → 300m 직진 후 주차장 램프 진입</p>
+                    </div>
+                  </div>
+                  <div class="col-md-1"></div>
+                  <div class="col-md-6">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                      <div class="accordion-item">
+                        <p class="accordion-header" id="panelsStayOpen-headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            승용차
+                          </button>
+                        </p>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                          aria-labelledby="panelsStayOpen-headingOne">
+                          <div class="accordion-body">
+                            <ul class="list">
+                              <li>수산시장 삼거리에서 수산시장고가차도를 이용해 진입</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <p class="accordion-header" id="panelsStayOpen-headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            지하철
+                          </button>
+                        </p>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                          aria-labelledby="panelsStayOpen-headingTwo">
+                          <div class="accordion-body">
+                            <ul class="list">
+                              <li class="pb-1">1호선 이용 시 : 9호선 환승통로 이용 → 9호선 7번 출구 145M 직진 → 지하보도 통과 → 노량진수산시장 입구 진입</li>
+                              <li>9호선 이용 시 : 9호선 7번 출구 145M 직진 → 지하보도 통과 → 노량진수산시장 입구 진입</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <p class="accordion-header" id="panelsStayOpen-headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            버스
+                          </button>
+                        </p>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                          aria-labelledby="panelsStayOpen-headingThree">
+                          <div class="accordion-body">
+                            <ul class="list">
+                              <li>노량진수산시장, CTS기독교TV 정류장 하차 → 지하보도 진입 → 노량진수산시장 입구 진입</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row content3">
+            <div class="col-md-12">
+              <table class="table-content">
+                <tbody class="table-text">
+                  <tr>
+                    <th scope="row">대방역 방면</th>
+                    <td>
+                      <ul>
+                        <li>간선버스(파랑버스) 150, 360, 462, 507, 605, 640, 641, 650</li>
+                        <li>지선버스(초록버스) 5531, 6211, 6411, 6515</li>
+                        <li>마을버스 동작01, 동작03, 동작08, 동작13</li>
+                        <li>광역버스 9408</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">노량진역 방면</th>
+                    <td>
+                      <ul>
+                        <li>간선버스(파랑버스) 150, 360, 462, 507, 605, 640</li>
+                        <li>지선버스(초록버스) 5531, 6211, 6411</li>
+                        <li>마을버스 동작01, 동작03, 동작08, 동작13</li>
+                        <li>광역버스 9408</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">동작구청 정문<br> 정류장</th>
+                    <td>
+                      <ul>
+                        <li>동작구청 정문 하차 → 9호선 노량진역 5번 출구 방향 삼거리 → 9호선 노량진역 6번 출구 방향 우회전 → 대방역 방향 직진 80m → 횡단보도 횡단 후 지하보도 진입 → 노량진 수산시장 입구 진입</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">장승배기역 방면</th>
+                    <td>
+                      <ul>
+                        <li>간선버스(파랑버스) 641, 650, N15</li>
+                        <li>지선버스(초록버스) 6515</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">노량진역 방면</th>
+                    <td>
+                      <ul>
+                        <li>간선버스(파랑버스) 152, 500, 504, 641, 650, 654, 751, 752, N15</li>
+                        <li>지선버스(초록버스) 5516, 5517, 5535, 5536, 6515</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- 주차 안내 -->
+        <div class="tab-pane fade" id="parking-con" role="tabpanel" aria-labelledby="parking-tab">bbb</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-md-3">
+          <div class="logo">
+            <img src="assets/images/icons/logo-w 10.png" alt="logo">
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-8">
+          <div class="d-flex">
+            <a href="#">개인정보취급방침</a>
+            <a href="#">안전/보건 경영방침</a>
+            <a href="#">영상정보처리기기 운영/관리 방침</a>
+            <a href="#">경영공시</a>
+          </div>
+          <div class="d-flex footxt">
+            <p>사업자등록번호 : 108-81-14995</p>
+            <p>주소 : 서울특별시 동작구 노들로 674</p>
+            <p>대표전화 : 02-2254-8000~1</p>
+          </div>
+          <p class="copy">Copyright 2025. NORYANGJIN FISHERIES WHOLESALE MARKET. ALL RIGHTS RESERVED.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- 카카오지도 API-->
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a301737046ee8690bb4e3a1e1523d983"></script>
+
+  <script>
+    // nav
+    $('.main-menu').mouseover(function () {
+      $('.sub-menu, .sub-menu-bg').stop().slideDown();
+    })
+    $('.main-menu').mouseleave(function () {
+      $('.sub-menu, .sub-menu-bg').stop().slideUp();
+    })
+
+    // 지도 띄우는 script
+    var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+    var options = { //지도를 생성할 때 필요한 기본 옵션
+      center: new kakao.maps.LatLng(
+        37.515117, 126.938857), //지도의 중심좌표.
+      level: 3 //지도의 레벨(확대, 축소 정도)
+    };
+
+    var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+
+    var imageSrc = 'assets/images/icons/mapmarker.png', // 마커이미지의 주소입니다    
+      imageSize = new kakao.maps.Size(50, 37), // 마커이미지의 크기입니다
+      imageOption = { offset: new kakao.maps.Point(10, 20) }; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+
+    // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+    var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+      markerPosition = new kakao.maps.LatLng(37.515117, 126.938857); // 마커가 표시될 위치입니다
+
+    // 마커를 생성합니다
+    var marker = new kakao.maps.Marker({
+      position: markerPosition,
+      image: markerImage // 마커이미지 설정 
+    });
+
+    // 마커가 지도 위에 표시되도록 설정합니다
+    marker.setMap(map);  
+  </script>
+</body>
+
+</html>
