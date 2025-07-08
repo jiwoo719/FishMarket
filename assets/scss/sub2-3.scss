@@ -124,8 +124,9 @@ header {
     }
 
     .tab-content {
-      .container-fluid {
-        padding: 200px 0 0 0;
+      /* 위치 안내 */
+      .location-tab {
+        padding-top: 200px;
 
         .content1 {
           padding: 100px 0;
@@ -323,6 +324,132 @@ header {
                       }
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      }
+      /* 주차 안내 */
+      .parking-tab{
+        padding-top: 200px;
+        .row1{
+          padding: 100px 0;
+          .col-md-12{
+            .img-con{
+              img{
+                height: 300px;
+              }
+            }
+          }
+        }
+        .row2{
+          padding: 100px 0;
+          .col-md-4{
+            .txtbox{
+              margin-top: 50px;
+              .red{
+                color: #FF6565;
+              }
+            }
+          }
+          .col-md-8{
+            .calculate-list{
+              .li1{
+                display: flex;
+                padding-bottom: 30px;
+                border-bottom: 1px solid #ddd;
+                .b-18{
+                  font-size: 1.13rem;
+                  font-weight: 700s;
+                  color: var(--my-main-two);
+                  padding-right: 50px;
+                }
+                .r-16{
+                  font-size: 1rem;
+                  font-weight: 400;
+                }
+              }
+              .li2{
+                display: flex;
+                padding: 30px 0;
+                border-bottom: 1px solid #ddd;
+                .b-18{
+                  font-size: 1.13rem;
+                  font-weight: 700s;
+                  color: var(--my-main-two);
+                  padding-right: 50px;
+                }
+                .r-16{
+                  font-size: 1rem;
+                  font-weight: 400;
+                }
+              }
+            }
+          }
+        }
+        .row3{
+          padding: 100px 0;
+          .col-md-8{
+            th{
+              background-color: var(--my-back-two);
+              text-align: center;
+              width: 30%;
+              font-size: 1.13rem;
+              font-weight: 500;
+            }
+            .td1{
+              padding: 30px 0 30px 30px;
+              border-top: 1px solid var(--my-back-two);
+              border-bottom: 1px solid var(--my-back-two);
+              font-size: 1rem;
+              font-weight: 400;
+            }
+            .td2{
+              padding: 30px 0 30px 30px;
+              border-bottom: 1px solid var(--my-back-two);
+              font-size: 1rem;
+              font-weight: 400;
+            }
+          }
+        }
+        .row4{
+          padding-top: 100px;
+          .col-md-4{
+            .txtbox{
+              margin-top: 50px;
+            }
+          }
+          .col-md-8{
+            .calculate-list{
+              .li1{
+                display: flex;
+                padding-bottom: 30px;
+                border-bottom: 1px solid #ddd;
+                .b-18{
+                  font-size: 1.13rem;
+                  font-weight: 700s;
+                  color: var(--my-main-two);
+                  padding-right: 50px;
+                }
+                .r-16{
+                  font-size: 1rem;
+                  font-weight: 400;
+                }
+              }
+              .li2{
+                display: flex;
+                padding: 30px 0;
+                border-bottom: 1px solid #ddd;
+                .b-18{
+                  font-size: 1.13rem;
+                  font-weight: 700s;
+                  color: var(--my-main-two);
+                  padding-right: 50px;
+                }
+                .r-16{
+                  font-size: 1rem;
+                  font-weight: 400;
                 }
               }
             }
