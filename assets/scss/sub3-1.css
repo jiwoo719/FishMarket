@@ -70,7 +70,12 @@ header nav .main-menu .text-center .sub-menu li a:hover {
 
 /* sec01 */
 .sec01 .container {
-  padding: 200px 20px;
+  padding: 200px 20px 0 20px;
+}
+
+/* sec02 */
+.sec02 .container .row .col-md-12 .input-group {
+  width: 250px;
 }
 
 /* footer */
