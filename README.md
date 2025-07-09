@@ -26,6 +26,7 @@
 
 ## 2. 프로젝트 구조
 
+```text
 FishMarket/
 ├── README.md
 ├── index.html
@@ -49,7 +50,7 @@ FishMarket/
   │
   └── images/ # 이미지 리소스
     └── icons/ # 아이콘
-
+```
 
 ----
 
