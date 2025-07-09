@@ -2,9 +2,10 @@
 
 <img src="assets/images/readme-img.png" alt="리드미배너">
 
-> 개인 프로젝트 입니다.
+#### 개인 프로젝트 입니다.
 **배포 URL:** https://noryangjin.netlify.app
 
+----
 
 ## 프로젝트 소개
 - 노량진수산시장은 소비자에게 ‘신선도·안전성·투명성’을 보여줍니다.
